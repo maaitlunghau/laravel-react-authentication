@@ -1,0 +1,12 @@
+{
+    "build": {
+        "builder": "NIXPACKS"
+    },
+    "deploy": {
+        "startCommand": "php artisan migrate --force && php artisan serve --host 0.0.0.0 --port 8080"
+    },
+    "environment": {
+        "NIXPACKS_PHP_VERSION": "8.2.12",
+        "NIXPACKS_BUILD_CMD": "composer install --no-dev"
+    }
+}
